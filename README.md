@@ -1,119 +1,139 @@
-# **Online Shop Website Using HTML, CSS, and JavaScript (Session and Cookies)**  
+# 🛒 Online Game Shopping Website  
+**HTML • CSS • JavaScript (Sessions & Cookies)**
 
-## **Project Overview**  
-
-This project is a basic online shop website where users can browse products, add them to a shopping cart, and proceed to checkout. The website utilizes:  
-
-- **HTML** for structure  
-- **CSS** for styling and responsiveness  
-- **JavaScript** for session management and cookies to store cart data  
-
-Additionally, it includes user authentication (login/logout functionality) to ensure secure access to the shopping pages.  
+An online game shopping website where users can browse products, add them to a shopping cart, and complete checkout.  
+The project demonstrates **session and cookie handling in JavaScript**, along with **basic authentication (login/logout)** and a **multi-page shopping flow**.
 
 ---
 
-## **Demo**  
-
-Check out the live demo here:  
-
-[**Online Game Shopping Website Demo**](https://parthasarathy27.github.io/OnlineGameShopping-Website/index.html)  
+## 🌐 Live Demo
+👉 https://mukit-246.github.io/OnlineGameShopping-Website/
 
 ---
 
-## **Repository**  
-
-Find the complete source code at:  
-
-[**GitHub Repository**](https://github.com/parthasarathy27/OnlineGameShopping-Website)  
+## 📦 GitHub Repository
+👉 https://github.com/Mukit-246/OnlineGameShopping-Website
 
 ---
 
-## **Features**  
+## 📌 Project Overview
 
-### **1. User Authentication**  
-- **Login Page:** Users enter credentials to access the shopping pages.  
-- **Logout Functionality:** Clears session and cookies for security.  
+This project is built to practice core **frontend web development concepts** and **client-side state management**.  
+It focuses on how shopping cart data can persist across multiple pages using **sessions and cookies**, without a backend.
 
-### **2. Cart Management**  
-- Products can be added to the cart, and the total amount updates dynamically.  
-- Cart data persists across pages using **session and cookies**.  
-
-### **3. Multi-Page Shopping Experience**  
-
-The website consists of four main pages:  
-
-- **Page 1:** Displays a list of products with images and prices. Users can add products to their cart and move to the next page.  
-- **Page 2:** Another product selection page with different items. The session maintains cart data across pages.  
-- **Page 3:** Displays the total amount of selected products and provides a "Checkout" button.  
-- **Page 4 (Checkout):** Final page where users can complete their purchase.  
+### Key Concepts Demonstrated
+- Client-side authentication flow
+- Session & cookie usage in JavaScript
+- Multi-page navigation with persistent cart data
+- Clean folder and file organization
 
 ---
 
-## **File Structure**  
+## ✨ Features
 
-```
-/OnlineShop/
-│── index.html           # Login/Register Page
-│── page1.html           # Product Selection Page 1
-│── page2.html           # Product Selection Page 2
-│── page3.html           # Product Selection Page 3
-│── page4.html           # Checkout Page
-│── styles.css           # Global Stylesheet
-│── assets/              # Images, Icons, etc.
-│   ├── logo.jpg
-│   ├── product1.jpg
-│   ├── product2.jpg
+### 🔐 User Authentication
+- Login page to access shopping pages
+- Logout functionality clears session and cookies
+- Prevents unauthorized access to shopping pages
+
+### 🛒 Shopping Cart
+- Add products to cart
+- Dynamic total price calculation
+- Cart data persists across pages using **session & cookies**
+
+### 📄 Multi-Page Shopping Flow
+- **Page 1:** Product selection (set 1)
+- **Page 2:** Product selection (set 2)
+- **Page 3:** Cart summary with total amount
+- **Page 4:** Checkout page
+
+---
+
+## 🗂️ Project Structure
+
+OnlineGameShopping-Website/
+│── index.html # Login / Register Page
+│── page1.html # Product Selection Page 1
+│── page2.html # Product Selection Page 2
+│── page3.html # Cart Summary Page
+│── page4.html # Checkout Page
+│── assets/ # Images, icons, logos
 │── js/
-│   ├── auth.js          # User Authentication
-│   ├── cart.js          # Cart Management
-│   ├── session.js       # Session Handling
-│── README.md            # Project Overview & Setup Instructions
-```
+│ ├── auth.js # Login & logout logic
+│ ├── session.js # Session & cookie handling
+│── README.md # Project documentation
+
+yaml
+Copy code
 
 ---
 
-## **Technologies Used**  
+## 🛠️ Technologies Used
 
-- **HTML** → Structuring the web pages  
-- **CSS** → Styling and making the website responsive  
-- **JavaScript** → Handling session, cookies, cart management, and authentication  
-
----
-
-## **Setup Instructions**  
-
-Follow these steps to run the project locally:  
-
-1. **Clone the repository:**  
-   ```bash
-   git clone https://github.com/parthasarathy27/OnlineGameShopping-Website.git
-   ```  
-
-2. **Navigate to the project directory:**  
-   ```bash
-   cd OnlineGameShopping-Website
-   ```  
-
-3. **Open `index.html` in a web browser to start the application.**  
+- **HTML** — Page structure and layout
+- **CSS** — Styling and responsive design
+- **JavaScript** —  
+  - Authentication logic  
+  - Cart management  
+  - Session & cookie handling  
 
 ---
 
-## **How It Works**  
+## ▶️ How to Run the Project Locally
 
-1. **Login Page:**  
-   - Users sign in to access shopping pages.  
-   - Credentials are validated to start a session.  
+### Method 1: Open Directly
+1. Download the repository as ZIP or clone it
+2. Extract the files
+3. Open `index.html` in any modern web browser
 
-2. **Product Selection Pages (Page 1, Page 2, Page 3):**  
-   - Users browse products, add them to their cart, and proceed to the next pages.  
-   - The cart is managed using JavaScript with session and cookies to store selected products and their prices.  
-
-3. **Checkout Page (Page 4):**  
-   - Displays the total amount for all selected products.  
-   - A "Checkout" button allows users to complete their purchase.  
-
-4. **Logout:**  
-   - When the user logs out, the session and cookies are cleared.  
-   - The user is redirected to the login page for security.  
+### Method 2: Using VS Code (Recommended)
+1. Open the project folder in **VS Code**
+2. Install **Live Server** extension
+3. Right-click `index.html` → **Open with Live Server**
 
 ---
+
+## 🔄 How the System Works
+
+1. **Login Page (`index.html`)**
+   - User logs in to start a session
+   - Session data enables access to shopping pages
+
+2. **Product Pages (`page1.html`, `page2.html`)**
+   - Products displayed with prices
+   - Users add items to cart
+   - Cart data stored using session & cookies
+
+3. **Cart Summary (`page3.html`)**
+   - Displays selected products
+   - Calculates total price dynamically
+
+4. **Checkout (`page4.html`)**
+   - Final confirmation page
+   - Simulates order completion
+
+5. **Logout**
+   - Clears session & cookies
+   - Redirects user back to login page
+
+---
+
+## 🎯 Learning Outcomes
+
+- Understanding session and cookie handling in JavaScript
+- Managing shared state across multiple HTML pages
+- Structuring frontend projects professionally
+- Preparing projects for GitHub Pages and CV use
+
+---
+
+## 👤 Author
+
+**Md. Abdullah Al Mukit**  
+GitHub: https://github.com/Mukit-246  
+Email: mdabdullahalmukittamim@gmail.com
+
+---
+
+## 📄 License
+This project is created for **learning and academic purposes**.
